@@ -11,6 +11,7 @@ import (
 // todo add functional tests
 // todo load configuration from a config file
 // todo add input XY validation
+// todo add command parameters options verbosity
 var l = 3
 var h = 2
 var RedTreesXY = []string{
