@@ -47,7 +47,8 @@ one red random : 3-1
 ```
 ## Execute
 
-`go run main.go`
+`go run main.go` OR copy-paste the main.go code on the Go playground
+https://play.golang.org/
 
 ## To do
 
