@@ -9,8 +9,8 @@ import (
 )
 
 // todo add functional tests
-
-// todo inject configuration
+// todo load configuration from a config file
+// todo add input XY validation
 var l = 3
 var h = 2
 var RedTreesXY = []string{
@@ -108,6 +108,7 @@ func isGreenTree(s []Tree, str string) bool {
 func pickOneTreeRandomRed() Tree {
 	rand.Seed(time.Now().UnixNano())
 
+	// todo remove picked random red tree
 	random := RedTrees[rand.Intn(len(RedTrees))]
 
 	return random
@@ -124,6 +125,7 @@ func pickOneTreeRandomGreenFromNeighbors(neighBoors []Tree) Tree {
 func burn(tree Tree, gt []Tree) []Tree {
 	var s2 []Tree
 
+	// todo do not rebuild all slice : just update the element to be burned into the slice
 	for _, i := range gt {
 		if i.XY == tree.XY {
 			i.Burning = true
